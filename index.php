@@ -1,5 +1,6 @@
 <?php
-  $text = "Nel prato fatto di biscotti, i conigli patocchi, giocano con i gorilla e si fanno i pizzicotti"
+  $text = "Nel prato fatto di biscotti, i conigli patocchi, giocano con i gorilla e si fanno i pizzicotti";
+  $text_length = strlen("$text");
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +16,7 @@
 <h1>PHP Badwords</h1>
 
 <p><?php echo $text ?></p>
+<span>Lunghezza paragrafo: <?php echo $text_length ?> caratteri.</span>
   
 </body>
 </html>
