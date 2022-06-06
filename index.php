@@ -1,5 +1,5 @@
 <?php
-  
+  $text = "Nel prato fatto di biscotti, i conigli patocchi, giocano con i gorilla e si fanno i pizzicotti"
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +11,10 @@
   <title>PHP Badwords</title>
 </head>
 <body>
+
+<h1>PHP Badwords</h1>
+
+<p><?php echo $text ?></p>
   
 </body>
 </html>
