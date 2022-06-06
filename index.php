@@ -3,7 +3,8 @@
   $text_length = strlen("$text");
 
   $censored_word = $_GET["censored"];
-  $text_censored = str_replace($censored_word,"***",$text)
+  $text_censored = str_replace($censored_word,"***",$text);
+  $text_censored_length = strlen("$text_censored")
 
 ?>
 
@@ -25,7 +26,7 @@
 
 <h2>Testo censurato</h2>
 <p><?php echo $text_censored ?></p>
-
+<span>Lunghezza paragrafo: <?php echo $text_censored_length ?> caratteri.</span>
 
   
 </body>
