@@ -1,6 +1,10 @@
 <?php
-  $text = "Nel prato fatto di biscotti, i conigli patocchi, giocano con i gorilla e si fanno i pizzicotti";
+  $text = "Nel prato fatto di biscotti, i conigli patocchi, giocano con i gorilla e si fanno i pizzicotti. Il mattino dopo poi un cacciatore errante compro una zolletta di zucchero da un vikingo in cambio di 3 pizzicotti. Era un giorno d'estate e le murene cantavo insieme ai galli.";
   $text_length = strlen("$text");
+
+  $censored_word = $_GET["censored"];
+  $text_censored = str_replace($censored_word,"***",$text)
+
 ?>
 
 <!DOCTYPE html>
@@ -15,8 +19,14 @@
 
 <h1>PHP Badwords</h1>
 
+<h2>I racconti della nonna (uncensored)</h2>
 <p><?php echo $text ?></p>
 <span>Lunghezza paragrafo: <?php echo $text_length ?> caratteri.</span>
+
+<h2>Testo censurato</h2>
+<p><?php echo $text_censored ?></p>
+
+
   
 </body>
 </html>
